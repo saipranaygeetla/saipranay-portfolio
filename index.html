@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sai Pranay Geetla — Associate Software Engineer</title>
-  <meta name="description" content="Associate Software Engineer — Java, Spring Boot, React, SQL, GCP. Built APIs on Apigee, published ML research (IEEE). Download resume." />
+  <meta name="description" content="Sai Pranay Geetla — Java, Spring Boot, React, SQL, GCP. Full-stack projects (Learnify), published ML research (IEEE). Download resume." />
   <meta property="og:title" content="Sai Pranay Geetla — Associate Software Engineer" />
-  <meta property="og:description" content="Java • Spring Boot • React • GCP — I build reliable backend systems and cloud-ready full-stack solutions." />
+  <meta property="og:description" content="Java • Spring Boot • React • GCP — building maintainable backend and full-stack systems. Learnify repo linked." />
   <meta property="og:image" content="/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.ico" />
@@ -26,59 +26,42 @@
   </script>
 
   <style>
-    /* ---------- Variables ---------- */
     :root{
-      --bg:#071026;
-      --card:#0b1530;
-      --muted:#9fb0c9;
-      --accent:#5ee7b0;
-      --accent2:#60a5fa;
-      --glass:rgba(255,255,255,0.03);
-      --text:#e6eef6;
-      --max:1100px;
+      --bg:#071026; --card:#0b1530; --muted:#9fb0c9; --accent:#5ee7b0; --accent2:#60a5fa;
+      --glass:rgba(255,255,255,0.03); --text:#e6eef6; --max:1000px;
     }
+    *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0; padding:28px; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
       background:
         radial-gradient(800px 500px at 10% 10%, rgba(96,165,250,0.035), transparent 8%),
         linear-gradient(180deg,var(--bg),#041024 100%);
-      color:var(--text); -webkit-font-smoothing:antialiased;
+      color:var(--text);
     }
     a{color:inherit}
     .wrap{max-width:var(--max); margin:0 auto}
-    /* header */
-    header{display:flex; gap:20px; align-items:center}
-    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#042827;font-size:34px;flex:0 0 96px;box-shadow:0 14px 40px rgba(2,6,23,0.6)}
-    h1{margin:0;font-size:28px}
-    .subtitle{color:var(--muted);margin-top:6px;font-size:15px}
-    .lead{color:var(--muted);margin-top:12px;line-height:1.5;max-width:70%}
-    .ctas{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+    header{display:flex; gap:16px; align-items:center}
+    .avatar{width:88px;height:88px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#042827;font-size:30px;flex:0 0 88px;box-shadow:0 12px 30px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:26px}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:14.5px}
+    .lead{color:var(--muted);margin-top:12px;line-height:1.5;max-width:72%}
+    .ctas{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
     .btn{padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none;display:inline-block}
     .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#042827}
     .btn-ghost{border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--muted)}
-    /* layout */
-    .layout{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:24px}
-    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006));padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 12px 30px rgba(2,6,23,0.6)}
+    .layout{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 12px 30px rgba(2,6,23,0.6)}
     .section-title{font-weight:700;margin-bottom:10px}
-    /* projects */
     .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
     .card-project{background:rgba(255,255,255,0.01);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
     .meta{color:var(--muted);font-size:13px;margin-top:6px}
     .project-cta{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
-    .metrics{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
-    .metric{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);font-size:13px}
-    /* skills */
     .skills{display:flex;flex-wrap:wrap;gap:8px}
     .chip{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
-    /* experience list */
     .list{margin:8px 0;padding-left:18px;color:var(--muted);line-height:1.6}
     footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
-    /* responsive */
-    @media(max-width:920px){
-      .layout{grid-template-columns:1fr}
-      .lead{max-width:100%}
-    }
+    @media(max-width:920px){ .layout{grid-template-columns:1fr} .lead{max-width:100%} }
   </style>
 </head>
 <body>
@@ -88,7 +71,11 @@
       <div>
         <h1>Sai Pranay Geetla</h1>
         <div class="subtitle">Associate Software Engineer — Java • Spring Boot • React • GCP</div>
-        <p class="lead">I design and ship reliable backend systems and cloud-ready full-stack solutions. I focus on measurable outcomes: secure APIs, maintainable code, and efficient cloud deployments.</p>
+
+        <!-- BIO — honest and recruiter-friendly -->
+        <p class="lead">
+          I am a motivated software engineer focused on backend and full-stack development. I have built and deployed full-stack apps locally and on cloud training environments, and I practice building and securing APIs on Google Cloud (Apigee, IAM, VPC) through structured labs and sandbox projects. I write clean code, design REST APIs, and deliver maintainable solutions that solve real problems.
+        </p>
 
         <div class="ctas" aria-label="primary actions">
           <a class="btn btn-primary" href="/resume.pdf" download>Download Resume</a>
@@ -96,10 +83,9 @@
           <a class="btn btn-ghost" href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
 
-        <div class="metrics" aria-hidden="true">
-          <div class="metric"><strong>10+</strong> Production APIs (Apigee)</div>
-          <div class="metric"><strong>~40%</strong> Stability improvement via policies</div>
-          <div class="metric"><strong>IEEE</strong> Publication — OTCON 2024</div>
+        <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px">
+          <div><strong>Location:</strong> Hyderabad, India</div>
+          <div><strong>Open to:</strong> Backend / Full-stack / Cloud roles</div>
         </div>
       </div>
     </header>
@@ -111,31 +97,40 @@
           <h2 class="section-title" id="projects-title">Featured Projects</h2>
 
           <div class="projects">
+            <!-- Learnify: uses your repo link -->
             <div class="card-project" role="article">
-              <div style="font-weight:700">Learnify — Full-Stack LMS</div>
-              <div class="meta">React • Spring Boot • MySQL • Docker • JWT</div>
-              <p style="margin-top:8px;color:var(--muted)">Built modular course delivery, role-based access, dashboards, and a secure JWT auth flow. Containerized services and improved dev cycle by ~30% using automation and CI practices.</p>
+              <div style="font-weight:700">Learnify — Full-Stack Learning Platform (Self-built)</div>
+              <div class="meta">React • Spring Boot • MySQL • JWT • Docker</div>
+              <p style="margin-top:8px;color:var(--muted)">
+                Built a complete LMS from scratch: course & module management, student and admin dashboards, progress tracking, JWT authentication, and role-based access. Backend APIs implemented in Spring Boot with JPA; frontend implemented with reusable React components. Containerized the application for local integration and testing.
+              </p>
               <div class="project-cta">
-                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">View code</a>
-                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">Live demo</a>
+                <a class="btn btn-ghost" href="https://github.com/saipranaygeetla/Learnify" target="_blank" rel="noreferrer">View code (Learnify)</a>
               </div>
             </div>
 
+            <!-- Bank project: no live demo -->
             <div class="card-project" role="article">
-              <div style="font-weight:700">Bank Account Management System</div>
+              <div style="font-weight:700">Bank Account Management System (Training Project)</div>
               <div class="meta">Java • Spring Boot • MySQL</div>
-              <p style="margin-top:8px;color:var(--muted)">Capstone project: secure registration, profile upload, transactions history and account management using MVC, JPA repositories and clean REST APIs.</p>
+              <p style="margin-top:8px;color:var(--muted)">
+                Training project developed during Tech Mahindra training: secure registration and login, profile photo upload, account editing and transaction history, implemented using MVC patterns and JPA repositories. Focused on clean REST API design and data persistence.
+              </p>
               <div class="project-cta">
                 <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">View code</a>
               </div>
             </div>
 
+            <!-- ML Paper -->
             <div class="card-project" role="article">
-              <div style="font-weight:700">Precision in Diabetes Diagnosis</div>
-              <div class="meta">Python • XGBoost • Random Forest</div>
-              <p style="margin-top:8px;color:var(--muted)">Ensemble ML model achieving ~83% accuracy on a clinical dataset. Published at IEEE OTCON 2024. Focused on preprocessing, feature engineering, and model evaluation.</p>
+              <div style="font-weight:700">Precision in Diabetes Diagnosis — Research</div>
+              <div class="meta">Python • XGBoost • Random Forest • IEEE</div>
+              <p style="margin-top:8px;color:var(--muted)">
+                Developed an ensemble model (XGBoost + Random Forest) achieving ~83% accuracy on a clinical dataset. Performed EDA, feature engineering, and model evaluation. Published at IEEE OTCON 2024.
+              </p>
               <div class="project-cta">
-                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">View paper</a>
+                <!-- Replace with your paper URL (IEEE Xplore link or Google Drive share link) -->
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">Read paper</a>
               </div>
             </div>
           </div>
@@ -145,12 +140,14 @@
 
         <section aria-labelledby="experience-title">
           <h2 class="section-title" id="experience-title">Experience</h2>
-          <div style="font-weight:700">Tech Mahindra — Associate Software Engineer</div>
+
+          <div style="font-weight:700">Tech Mahindra — Associate Software Engineer (Training & Onboarding)</div>
           <div class="meta" style="margin-bottom:8px">Sept 2024 — Present</div>
+
           <ul class="list">
-            <li>Designed and deployed <strong>10+ REST APIs</strong> on Apigee and applied policies (rate limiting, quotas) to secure endpoints and ensure stability.</li>
-            <li>Configured IAM roles, VPCs, and compute instances; supported secure API gateway integrations and role-based access models.</li>
-            <li>Participated in backend development, microservice design basics, and performance tuning for production systems.</li>
+            <li>Completed Java Full-Stack and Google Cloud training with hands-on labs. Practiced API design and security with Apigee and sandbox IAM configurations in a training environment.</li>
+            <li>Implemented backend REST APIs, worked with JPA repositories and designed relational schemas for application data.</li>
+            <li>Built and tested local containerized services and learned cloud deployment concepts via GCP sandbox projects.</li>
           </ul>
         </section>
 
@@ -160,9 +157,9 @@
           <h2 class="section-title" id="education-title">Education & Certifications</h2>
           <div class="meta" style="margin-bottom:8px">B.Tech in Information Technology — Vardhaman College of Engineering • CGPA 8.75</div>
           <ul class="list">
-            <li>Apigee & API Management — Google Cloud (2025)</li>
-            <li>SQL & Relational Databases — IBM CognitiveClass (2024)</li>
-            <li>Exploratory Data Analysis (Level 2) — Accenture (2024)</li>
+            <li>Apigee & API Management — Google Cloud (trained & practiced in sandbox) </li>
+            <li>SQL & Relational Databases — IBM CognitiveClass</li>
+            <li>Exploratory Data Analysis (Level 2) — Accenture</li>
           </ul>
         </section>
       </main>
@@ -177,9 +174,9 @@
             <span class="chip" role="listitem">REST APIs</span>
             <span class="chip" role="listitem">React</span>
             <span class="chip" role="listitem">MySQL</span>
-            <span class="chip" role="listitem">GCP</span>
+            <span class="chip" role="listitem">GCP (sandbox)</span>
             <span class="chip" role="listitem">Docker</span>
-            <span class="chip" role="listitem">Apigee</span>
+            <span class="chip" role="listitem">Apigee (practiced)</span>
           </div>
         </div>
 
@@ -190,36 +187,35 @@
             <strong>Phone:</strong> <a href="tel:+919014264208" style="color:var(--accent)">+91 9014264208</a><br>
             <strong>Location:</strong> Hyderabad, India
           </div>
-          <div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
             <a class="btn btn-primary" href="/resume.pdf" download>Download Resume</a>
             <a class="btn btn-ghost" href="mailto:saipranaygeetla@outlook.com">Email</a>
           </div>
         </div>
 
         <div style="margin-top:14px">
-          <h3 class="section-title">Quick Links</h3>
-          <div style="color:var(--muted)">
-            <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer" style="color:var(--accent)">LinkedIn</a><br>
-            <a href="https://github.com/saipranaygeetla" target="_blank" rel="noreferrer" style="color:var(--accent)">GitHub</a>
+          <h3 class="section-title">Links</h3>
+          <div style="color:var(--muted);margin-top:6px">
+            <a href="https://github.com/saipranaygeetla/Learnify" target="_blank" rel="noreferrer" style="color:var(--accent)">Learnify (repo)</a><br>
+            <a href="https://github.com/saipranaygeetla" target="_blank" rel="noreferrer" style="color:var(--accent)">GitHub</a><br>
+            <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer" style="color:var(--accent)">LinkedIn</a>
           </div>
         </div>
       </aside>
     </div>
 
     <footer>
-      <div>© <strong>Sai Pranay</strong> — Built for hiring teams & technical leaders • Published at IEEE OTCON 2024</div>
+      <div>© <strong>Sai Pranay</strong> — Built for hiring managers & technical leaders • Published at IEEE OTCON 2024</div>
     </footer>
   </div>
 
-  <!-- Small script: clickable mailto analytics-free (no external trackers) -->
+  <!-- small helper script for replacing placeholders later -->
   <script>
-    // replace project links automatically if you add data-link attributes later
-    // (keeps file flexible)
-    document.addEventListener('click', function(e){
-      if(e.target.matches('[data-open]')){
-        const url = e.target.getAttribute('data-open');
-        if(url) window.open(url, '_blank', 'noopener');
-      }
+    // If you want to programmatically update paper link or view-code links later,
+    // add elements with data-replace attributes and call this small helper.
+    document.querySelectorAll('[data-replace]').forEach(el=>{
+      const url = el.getAttribute('data-replace');
+      if(url) el.href = url;
     });
   </script>
 </body>
