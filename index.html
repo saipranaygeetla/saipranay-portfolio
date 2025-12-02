@@ -1,222 +1,913 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sai Pranay Geetla — Associate Software Engineer</title>
-  <meta name="description" content="Sai Pranay Geetla — Java, Spring Boot, React, SQL, GCP. Full-stack projects (Learnify), published ML research (IEEE). Download resume." />
-  <meta property="og:title" content="Sai Pranay Geetla — Associate Software Engineer" />
-  <meta property="og:description" content="Java • Spring Boot • React • GCP — building maintainable backend and full-stack systems. Learnify repo linked." />
-  <meta property="og:image" content="/og-image.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Sai Pranay Geetla",
-    "jobTitle": "Associate Software Engineer",
-    "url": "https://saipranaygeetla.github.io/saipranay-portfolio/",
-    "sameAs": [
-      "https://linkedin.com/in/sai-pranay-geetla",
-      "https://github.com/saipranaygeetla"
-    ]
-  }
-  </script>
-
-  <style>
-    :root{
-      --bg:#071026; --card:#0b1530; --muted:#9fb0c9; --accent:#5ee7b0; --accent2:#60a5fa;
-      --glass:rgba(255,255,255,0.03); --text:#e6eef6; --max:1000px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; padding:28px; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
-      background:
-        radial-gradient(800px 500px at 10% 10%, rgba(96,165,250,0.035), transparent 8%),
-        linear-gradient(180deg,var(--bg),#041024 100%);
-      color:var(--text);
-    }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto}
-    header{display:flex; gap:16px; align-items:center}
-    .avatar{width:88px;height:88px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#042827;font-size:30px;flex:0 0 88px;box-shadow:0 12px 30px rgba(2,6,23,0.6)}
-    h1{margin:0;font-size:26px}
-    .subtitle{color:var(--muted);margin-top:6px;font-size:14.5px}
-    .lead{color:var(--muted);margin-top:12px;line-height:1.5;max-width:72%}
-    .ctas{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
-    .btn{padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none;display:inline-block}
-    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#042827}
-    .btn-ghost{border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--muted)}
-    .layout{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:22px}
-    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 12px 30px rgba(2,6,23,0.6)}
-    .section-title{font-weight:700;margin-bottom:10px}
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
-    .card-project{background:rgba(255,255,255,0.01);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
-    .meta{color:var(--muted);font-size:13px;margin-top:6px}
-    .project-cta{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
-    .list{margin:8px 0;padding-left:18px;color:var(--muted);line-height:1.6}
-    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
-    @media(max-width:920px){ .layout{grid-template-columns:1fr} .lead{max-width:100%} }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sai Pranay Geetla - Software Engineer specializing in Java Full-Stack Development, API Management, and Cloud Solutions">
+    <meta name="keywords" content="Software Engineer, Java Developer, API Developer, GCP, Spring Boot, React">
+    <title>Sai Pranay Geetla | Software Engineer</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+        }
+        
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        
+        .hero .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-content .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        .hero-content p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+        
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            animation: fadeInUp 1s ease 0.8s both;
+        }
+        
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: var(--white);
+            color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+        
+        /* About Section */
+        #about {
+            background: var(--bg-light);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-category {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            padding: 0.5rem 0;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .skill-category li::before {
+            content: '▹';
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        /* Experience Section */
+        #experience {
+            background: var(--bg-light);
+        }
+        
+        .experience-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .experience-header h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+        }
+        
+        .experience-header .company {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .experience-header .duration {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .experience-card ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        
+        .experience-card li {
+            padding: 0.5rem 0;
+            color: var(--text-light);
+            display: flex;
+            gap: 0.75rem;
+        }
+        
+        .experience-card li::before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .project-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 2rem;
+            color: var(--white);
+        }
+        
+        .project-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .project-body {
+            padding: 1.5rem;
+        }
+        
+        .project-body ul {
+            list-style: none;
+        }
+        
+        .project-body li {
+            padding: 0.5rem 0;
+            color: var(--text-light);
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .project-body li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        /* Education Section */
+        #education {
+            background: var(--bg-light);
+        }
+        
+        .education-timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .education-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .education-item h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .education-item .degree {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+        
+        .education-item .year {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .education-item .score {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+        
+        /* Certifications Section */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .cert-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+            transition: transform 0.3s;
+        }
+        
+        .cert-card:hover {
+            transform: translateX(5px);
+        }
+        
+        .cert-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: var(--white);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .cert-info h4 {
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+        
+        .cert-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: var(--white);
+        }
+        
+        #contact .section-title,
+        #contact .section-subtitle {
+            color: var(--white);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+        
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .contact-item i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-item a {
+            color: var(--white);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                text-align: center;
+            }
+        }
+        
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap" role="main">
-    <header>
-      <div class="avatar" aria-hidden="true">SP</div>
-      <div>
-        <h1>Sai Pranay Geetla</h1>
-        <div class="subtitle">Associate Software Engineer — Java • Spring Boot • React • GCP</div>
-
-        <!-- BIO — honest and recruiter-friendly -->
-        <p class="lead">
-          I am a motivated software engineer focused on backend and full-stack development. I have built and deployed full-stack apps locally and on cloud training environments, and I practice building and securing APIs on Google Cloud (Apigee, IAM, VPC) through structured labs and sandbox projects. I write clean code, design REST APIs, and deliver maintainable solutions that solve real problems.
-        </p>
-
-        <div class="ctas" aria-label="primary actions">
-          <a class="btn btn-primary" href="/Sai_Pranay_Geetla_Resume.pdf" download>Download Resume</a>
-          <a class="btn btn-ghost" href="mailto:saipranaygeetla@gmail.com">Contact</a>
-          <a class="btn btn-ghost" href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer">LinkedIn</a>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">SPG</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px">
-          <div><strong>Location:</strong> Hyderabad, India</div>
-          <div><strong>Open to:</strong> Backend / Full-stack / Cloud roles</div>
-        </div>
-      </div>
-    </header>
-
-    <div class="layout" aria-label="main content">
-      <!-- main column -->
-      <main class="panel" aria-label="primary content">
-        <section aria-labelledby="projects-title">
-          <h2 class="section-title" id="projects-title">Featured Projects</h2>
-
-          <div class="projects">
-            <!-- Learnify: uses your repo link -->
-            <div class="card-project" role="article">
-              <div style="font-weight:700">Learnify — Full-Stack Learning Platform (Self-built)</div>
-              <div class="meta">React • Spring Boot • MySQL • JWT • Docker</div>
-              <p style="margin-top:8px;color:var(--muted)">
-                Built a complete LMS from scratch: course & module management, student and admin dashboards, progress tracking, JWT authentication, and role-based access. Backend APIs implemented in Spring Boot with JPA; frontend implemented with reusable React components. Containerized the application for local integration and testing.
-              </p>
-              <div class="project-cta">
-                <a class="btn btn-ghost" href="https://github.com/saipranaygeetla/Learnify" target="_blank" rel="noreferrer">View code (Learnify)</a>
-              </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sai Pranay Geetla</h1>
+                <p class="tagline">Associate Software Engineer | API Developer | Cloud Enthusiast</p>
+                <p>Passionate software developer specializing in building scalable APIs, cloud solutions, and full-stack applications. Experienced in Java, Spring Boot, React, GCP, and API management with Apigee.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/saipranaygeetla" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:saipranaygeetla@outlook.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+919014264208" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Bank project: no live demo -->
-            <div class="card-project" role="article">
-              <div style="font-weight:700">Bank Account Management System (Training Project)</div>
-              <div class="meta">Java • Spring Boot • MySQL</div>
-              <p style="margin-top:8px;color:var(--muted)">
-                Training project developed during Tech Mahindra training: secure registration and login, profile photo upload, account editing and transaction history, implemented using MVC patterns and JPA repositories. Focused on clean REST API design and data persistence.
-              </p>
-              <div class="project-cta">
-                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">View code</a>
-              </div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Driven by innovation and passionate about technology</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a motivated software developer with a strong foundation in full-stack development and cloud technologies. Currently working at Tech Mahindra as an Associate Software Engineer, I specialize in API development, microservices architecture, and cloud infrastructure.</p>
+                    
+                    <p>My expertise lies in designing and deploying RESTful APIs, implementing security protocols, and optimizing system performance. I'm passionate about writing clean, efficient code and continuously learning emerging technologies to deliver high-quality solutions.</p>
+                    
+                    <p>With hands-on experience in Java, Spring Boot, React, GCP, and Apigee, I've successfully built and deployed multiple projects that demonstrate my ability to create scalable, production-ready applications.</p>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-card fade-in">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">APIs Deployed</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">Performance Boost</div>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- ML Paper -->
-            <div class="card-project" role="article">
-              <div style="font-weight:700">Precision in Diabetes Diagnosis — Research</div>
-              <div class="meta">Python • XGBoost • Random Forest • IEEE</div>
-              <p style="margin-top:8px;color:var(--muted)">
-                Developed an ensemble model (XGBoost + Random Forest) achieving ~83% accuracy on a clinical dataset. Performed EDA, feature engineering, and model evaluation. Published at IEEE OTCON 2024.
-              </p>
-              <div class="project-cta">
-                <!-- Replace with your paper URL (IEEE Xplore link or Google Drive share link) -->
-                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">Read paper</a>
-              </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>REST APIs</li>
+                        <li>JPA/Hibernate</li>
+                        <li>Microservices</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Responsive Design</li>
+                        <li>UI/UX Basics</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <ul>
+                        <li>Google Cloud Platform</li>
+                        <li>Apigee API Management</li>
+                        <li>Docker</li>
+                        <li>CI/CD Basics</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQL Query Optimization</li>
+                        <li>Database Design</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-tools"></i> Tools & Concepts</h3>
+                    <ul>
+                        <li>Git/GitHub</li>
+                        <li>Postman</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Agile Methodology</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </section>
-
-        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
-
-        <section aria-labelledby="experience-title">
-          <h2 class="section-title" id="experience-title">Experience</h2>
-
-          <div style="font-weight:700">Tech Mahindra — Associate Software Engineer (Training & Onboarding)</div>
-          <div class="meta" style="margin-bottom:8px">Sept 2024 — Present</div>
-
-          <ul class="list">
-            <li>Completed Java Full-Stack and Google Cloud training with hands-on labs. Practiced API design and security with Apigee and sandbox IAM configurations in a training environment.</li>
-            <li>Implemented backend REST APIs, worked with JPA repositories and designed relational schemas for application data.</li>
-            <li>Built and tested local containerized services and learned cloud deployment concepts via GCP sandbox projects.</li>
-          </ul>
-        </section>
-
-        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
-
-        <section aria-labelledby="education-title">
-          <h2 class="section-title" id="education-title">Education & Certifications</h2>
-          <div class="meta" style="margin-bottom:8px">B.Tech in Information Technology — Vardhaman College of Engineering • CGPA 8.75</div>
-          <ul class="list">
-            <li>Apigee & API Management — Google Cloud (trained & practiced in sandbox) </li>
-            <li>SQL & Relational Databases — IBM CognitiveClass</li>
-            <li>Exploratory Data Analysis (Level 2) — Accenture</li>
-          </ul>
-        </section>
-      </main>
-
-      <!-- right column -->
-      <aside class="panel" aria-label="sidebar">
-        <div>
-          <h3 class="section-title">Top Skills</h3>
-          <div class="skills" role="list">
-            <span class="chip" role="listitem">Java</span>
-            <span class="chip" role="listitem">Spring Boot</span>
-            <span class="chip" role="listitem">REST APIs</span>
-            <span class="chip" role="listitem">React</span>
-            <span class="chip" role="listitem">MySQL</span>
-            <span class="chip" role="listitem">GCP (sandbox)</span>
-            <span class="chip" role="listitem">Docker</span>
-            <span class="chip" role="listitem">Apigee (practiced)</span>
-          </div>
         </div>
+    </section>
 
-        <div style="margin-top:14px">
-          <h3 class="section-title">Contact</h3>
-          <div class="meta" style="margin-bottom:10px">
-            <strong>Email:</strong> <a href="mailto:saipranaygeetla@outlook.com" style="color:var(--accent)">saipranaygeetla@outlook.com</a><br>
-            <strong>Phone:</strong> <a href="tel:+919014264208" style="color:var(--accent)">+91 9014264208</a><br>
-            <strong>Location:</strong> Hyderabad, India
-          </div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap">
-            <a class="btn btn-primary" href="/resume.pdf" download>Download Resume</a>
-            <a class="btn btn-ghost" href="mailto:saipranaygeetla@outlook.com">Email</a>
-          </div>
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">My journey in the tech industry</p>
+            
+            <div class="experience-card fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3>Associate Software Engineer</h3>
+                        <p class="company">Tech Mahindra Limited</p>
+                    </div>
+                    <div>
+                        <p class="duration"><i class="fas fa-calendar-alt"></i> Sept 2024 - Present</p>
+                        <p class="duration"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                    </div>
+                </div>
+                
+                <ul>
+                    <li>Completed comprehensive Java Full Stack and GCP-Apigee training, focusing on API development, authentication, authorization, and cloud infrastructure management</li>
+                    <li>Designed and deployed 10+ REST APIs on Apigee platform, implementing rate limiting and quota policies that improved system stability by 40% during peak traffic periods</li>
+                    <li>Gained hands-on exposure to IAM roles, VPC configuration, subnet design, and compute engine setup in Google Cloud Platform</li>
+                    <li>Trained in developing backend microservices using Spring Boot, with focus on performance optimization through efficient SQL queries and caching techniques</li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <div style="margin-top:14px">
-          <h3 class="section-title">Links</h3>
-          <div style="color:var(--muted);margin-top:6px">
-            <a href="https://github.com/saipranaygeetla/Learnify" target="_blank" rel="noreferrer" style="color:var(--accent)">Learnify (repo)</a><br>
-            <a href="https://github.com/saipranaygeetla" target="_blank" rel="noreferrer" style="color:var(--accent)">GitHub</a><br>
-            <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer" style="color:var(--accent)">LinkedIn</a>
-          </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Real-world applications showcasing my skills</p>
+            
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Learnify - Learning Management Platform</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <ul>
+                            <li>Developed full-stack LMS with domains, modules, lessons, practice questions, certificates, and progress tracking</li>
+                            <li>Built scalable Spring Boot REST APIs with JWT authentication and role-based access control</li>
+                            <li>Engineered modern React UI with animations, dashboards, and reusable component architecture</li>
+                            <li>Containerized services using Docker and integrated MySQL database</li>
+                            <li>Leveraged AI-assisted development reducing build time by 30% while achieving production-level quality</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Bank Account Management System</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Thymeleaf</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <ul>
+                            <li>Developed full-stack web application for Tech Mahindra capstone project with secure user registration and login</li>
+                            <li>Implemented features like profile photo upload, account information editing, and transaction history tracking</li>
+                            <li>Followed MVC architecture pattern with Spring Boot and Thymeleaf templates</li>
+                            <li>Applied REST APIs and handled data persistence with MySQL and JPA</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3>Precision in Diabetes Diagnosis</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Random Forest</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <ul>
+                            <li>Built ensemble ML model achieving 83% accuracy on dataset of 768 patients</li>
+                            <li>Implemented XGBoost and Random Forest algorithms for improved prediction accuracy</li>
+                            <li>Research findings published at IEEE OTCON 2024 international conference</li>
+                            <li>Conducted comprehensive data analysis and model evaluation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </aside>
-    </div>
+    </section>
 
-    <footer>
-      <div>© <strong>Sai Pranay</strong> — Built for hiring managers & technical leaders • Published at IEEE OTCON 2024</div>
-    </footer>
-  </div>
-
-  <!-- small helper script for replacing placeholders later -->
-  <script>
-    // If you want to programmatically update paper link or view-code links later,
-    // add elements with data-replace attributes and call this small helper.
-    document.querySelectorAll('[data-replace]').forEach(el=>{
-      const url = el.getAttribute('data-replace');
-      if(url) el.href = url;
-    });
-  </script>
-</body>
-</html>
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background and achievements</p>
+            
+            <div class="education-timeline">
+                <div class="education-item fade-in">
+                    <h3>Vardhaman College of Engineering</h3>
+                    <p class="degree">Bachelor of Technology (B.Tech) in Information Technology</p>
+                    <p class="year">2020 - 2024 | Hyderabad, Telangana</p>
+                    <p class="score">CGPA: 8.75/10</p>
+                </div>
+                
+                <div class="education-item fade-in">
+                    <h3>
