@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sai Pranay Geetla - Software Engineer specializing in Java Full-Stack Development, API Management, and Cloud Solutions">
-    <meta name="keywords" content="Software Engineer, Java Developer, API Developer, GCP, Spring Boot, React">
     <title>Sai Pranay Geetla | Software Engineer</title>
     
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
@@ -21,9 +17,8 @@
         }
         
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #3b82f6;
+            --primary: #2563eb;
+            --secondary: #1e40af;
             --text-dark: #1f2937;
             --text-light: #6b7280;
             --bg-light: #f9fafb;
@@ -63,7 +58,7 @@
         nav .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--primary);
         }
         
         nav ul {
@@ -80,17 +75,17 @@
         }
         
         nav a:hover {
-            color: var(--primary-color);
+            color: var(--primary);
         }
         
-        /* Hero Section */
+        /* Hero Section - Compact */
         .hero {
-            min-height: 100vh;
+            min-height: 85vh;
             display: flex;
             align-items: center;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: var(--white);
-            padding: 6rem 2rem 4rem;
+            padding: 6rem 2rem 3rem;
             position: relative;
             overflow: hidden;
         }
@@ -118,23 +113,23 @@
         }
         
         .hero-content h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             animation: fadeInUp 1s ease;
         }
         
         .hero-content .tagline {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
             opacity: 0.95;
             animation: fadeInUp 1s ease 0.2s both;
         }
         
         .hero-content p {
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin-bottom: 2rem;
+            font-size: 1rem;
+            max-width: 650px;
+            margin-bottom: 1.5rem;
             opacity: 0.9;
             animation: fadeInUp 1s ease 0.4s both;
         }
@@ -147,7 +142,7 @@
         }
         
         .btn {
-            padding: 0.875rem 2rem;
+            padding: 0.75rem 1.75rem;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
@@ -157,7 +152,7 @@
         
         .btn-primary {
             background: var(--white);
-            color: var(--primary-color);
+            color: var(--primary);
         }
         
         .btn-primary:hover {
@@ -173,32 +168,32 @@
         
         .btn-secondary:hover {
             background: var(--white);
-            color: var(--primary-color);
+            color: var(--primary);
         }
         
         .social-links {
             display: flex;
             gap: 1rem;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             animation: fadeInUp 1s ease 0.8s both;
         }
         
         .social-links a {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             background: rgba(255, 255, 255, 0.2);
             color: var(--white);
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: all 0.3s;
         }
         
         .social-links a:hover {
             background: var(--white);
-            color: var(--primary-color);
+            color: var(--primary);
             transform: translateY(-5px);
         }
         
@@ -213,9 +208,9 @@
             }
         }
         
-        /* Sections */
+        /* Sections - Reduced padding */
         section {
-            padding: 5rem 2rem;
+            padding: 3.5rem 2rem;
         }
         
         .container {
@@ -224,48 +219,37 @@
         }
         
         .section-title {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             color: var(--text-dark);
         }
         
         .section-subtitle {
             text-align: center;
             color: var(--text-light);
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
         }
         
-        /* About Section */
-        #about {
+        /* Stats Section - Compact */
+        #stats {
             background: var(--bg-light);
-        }
-        
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-        
-        .about-text p {
-            margin-bottom: 1rem;
-            color: var(--text-light);
-            line-height: 1.8;
+            padding: 2.5rem 2rem;
         }
         
         .stats {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
-            margin-top: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         .stat-card {
             text-align: center;
-            padding: 1.5rem;
+            padding: 1.5rem 1rem;
             background: var(--white);
             border-radius: 12px;
             box-shadow: var(--shadow);
@@ -277,26 +261,27 @@
         }
         
         .stat-number {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--primary);
         }
         
         .stat-label {
             color: var(--text-light);
-            margin-top: 0.5rem;
+            margin-top: 0.25rem;
+            font-size: 0.9rem;
         }
         
-        /* Skills Section */
+        /* Skills Section - More Compact */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
         }
         
         .skill-category {
             background: var(--white);
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 12px;
             box-shadow: var(--shadow);
             transition: all 0.3s;
@@ -308,11 +293,12 @@
         }
         
         .skill-category h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-size: 1.1rem;
         }
         
         .skill-category ul {
@@ -320,30 +306,33 @@
         }
         
         .skill-category li {
-            padding: 0.5rem 0;
+            padding: 0.4rem 0;
             color: var(--text-light);
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-size: 0.95rem;
         }
         
         .skill-category li::before {
             content: '▹';
-            color: var(--primary-color);
+            color: var(--primary);
             font-weight: bold;
         }
         
-        /* Experience Section */
+        /* Experience Section - Streamlined */
         #experience {
             background: var(--bg-light);
         }
         
         .experience-card {
             background: var(--white);
-            padding: 2rem;
+            padding: 1.75rem;
             border-radius: 12px;
             box-shadow: var(--shadow);
-            border-left: 4px solid var(--primary-color);
+            border-left: 4px solid var(--primary);
+            max-width: 900px;
+            margin: 0 auto;
         }
         
         .experience-header {
@@ -355,13 +344,14 @@
         }
         
         .experience-header h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: var(--text-dark);
         }
         
         .experience-header .company {
-            color: var(--primary-color);
+            color: var(--primary);
             font-weight: 600;
+            font-size: 1.05rem;
         }
         
         .experience-header .duration {
@@ -371,28 +361,30 @@
         
         .experience-card ul {
             list-style: none;
-            margin-top: 1rem;
+            margin-top: 0.75rem;
         }
         
         .experience-card li {
-            padding: 0.5rem 0;
+            padding: 0.4rem 0;
             color: var(--text-light);
             display: flex;
             gap: 0.75rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
         
         .experience-card li::before {
             content: '✓';
-            color: var(--primary-color);
+            color: var(--primary);
             font-weight: bold;
             flex-shrink: 0;
         }
         
-        /* Projects Section */
+        /* Projects Section - Grid */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
         }
         
         .project-card {
@@ -409,32 +401,32 @@
         }
         
         .project-header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            padding: 2rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 1.5rem;
             color: var(--white);
         }
         
         .project-header h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
         
         .project-tech {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
+            gap: 0.4rem;
+            margin-top: 0.75rem;
         }
         
         .tech-tag {
             background: rgba(255, 255, 255, 0.2);
-            padding: 0.25rem 0.75rem;
+            padding: 0.2rem 0.6rem;
             border-radius: 20px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
         
         .project-body {
-            padding: 1.5rem;
+            padding: 1.25rem;
         }
         
         .project-body ul {
@@ -442,70 +434,74 @@
         }
         
         .project-body li {
-            padding: 0.5rem 0;
+            padding: 0.35rem 0;
             color: var(--text-light);
             display: flex;
             gap: 0.5rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
         
         .project-body li::before {
             content: '•';
-            color: var(--primary-color);
+            color: var(--primary);
             font-weight: bold;
         }
         
-        /* Education Section */
+        /* Education - Horizontal Cards */
         #education {
             background: var(--bg-light);
         }
         
-        .education-timeline {
-            max-width: 800px;
-            margin: 0 auto;
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
         }
         
         .education-item {
             background: var(--white);
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 12px;
             box-shadow: var(--shadow);
-            margin-bottom: 2rem;
-            border-left: 4px solid var(--primary-color);
+            border-left: 4px solid var(--primary);
         }
         
         .education-item h3 {
-            color: var(--primary-color);
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
         }
         
         .education-item .degree {
             font-weight: 600;
             color: var(--text-dark);
             margin-bottom: 0.25rem;
+            font-size: 0.95rem;
         }
         
         .education-item .year {
             color: var(--text-light);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
         .education-item .score {
-            color: var(--primary-color);
+            color: var(--primary);
             font-weight: 600;
             margin-top: 0.5rem;
+            font-size: 0.95rem;
         }
         
-        /* Certifications Section */
+        /* Certifications - Compact Grid */
         .certifications-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.25rem;
         }
         
         .cert-card {
             background: var(--white);
-            padding: 1.5rem;
+            padding: 1.25rem;
             border-radius: 12px;
             box-shadow: var(--shadow);
             display: flex;
@@ -519,32 +515,34 @@
         }
         
         .cert-icon {
-            width: 50px;
-            height: 50px;
-            background: var(--primary-color);
+            width: 45px;
+            height: 45px;
+            background: var(--primary);
             color: var(--white);
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             flex-shrink: 0;
         }
         
         .cert-info h4 {
             color: var(--text-dark);
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.2rem;
+            font-size: 0.95rem;
         }
         
         .cert-info p {
             color: var(--text-light);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
-        /* Contact Section */
+        /* Contact Section - Compact */
         #contact {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: var(--white);
+            padding: 3rem 2rem;
         }
         
         #contact .section-title,
@@ -554,14 +552,17 @@
         
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .contact-item {
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             backdrop-filter: blur(10px);
@@ -574,77 +575,67 @@
         }
         
         .contact-item i {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
         }
         
         .contact-item h3 {
             margin-bottom: 0.5rem;
+            font-size: 1rem;
         }
         
         .contact-item a {
             color: var(--white);
             text-decoration: none;
             word-break: break-all;
+            font-size: 0.9rem;
         }
         
         .contact-item a:hover {
             text-decoration: underline;
         }
         
-        /* Footer */
+        /* Footer - Minimal */
         footer {
             background: var(--text-dark);
             color: var(--white);
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem;
+            font-size: 0.9rem;
         }
         
         /* Responsive Design */
         @media (max-width: 768px) {
             nav ul {
                 gap: 1rem;
-                font-size: 0.9rem;
+                font-size: 0.85rem;
             }
             
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .hero-content .tagline {
-                font-size: 1.2rem;
-            }
-            
-            .about-content {
-                grid-template-columns: 1fr;
+                font-size: 1.1rem;
             }
             
             .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .projects-grid, .education-grid {
                 grid-template-columns: 1fr;
             }
             
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .experience-header {
-                flex-direction: column;
-            }
-            
-            .cta-buttons {
-                flex-direction: column;
-            }
-            
-            .btn {
-                text-align: center;
+            section {
+                padding: 2.5rem 1.5rem;
             }
         }
         
-        /* Scroll animations */
         .fade-in {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
         }
         
         .fade-in.visible {
@@ -660,7 +651,6 @@
             <div class="logo">SPG</div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -675,11 +665,11 @@
             <div class="hero-content">
                 <h1>Sai Pranay Geetla</h1>
                 <p class="tagline">Associate Software Engineer | API Developer | Cloud Enthusiast</p>
-                <p>Passionate software developer specializing in building scalable APIs, cloud solutions, and full-stack applications. Experienced in Java, Spring Boot, React, GCP, and API management with Apigee.</p>
+                <p>Java Full-Stack Developer specializing in API Management (Apigee), Spring Boot microservices, React, and GCP. Proven track record of deploying 10+ production APIs with 40% performance improvements.</p>
                 
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
                 
                 <div class="social-links">
@@ -692,34 +682,25 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- Stats Section -->
+    <section id="stats">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">Driven by innovation and passionate about technology</p>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a motivated software developer with a strong foundation in full-stack development and cloud technologies. Currently working at Tech Mahindra as an Associate Software Engineer, I specialize in API development, microservices architecture, and cloud infrastructure.</p>
-                    
-                    <p>My expertise lies in designing and deploying RESTful APIs, implementing security protocols, and optimizing system performance. I'm passionate about writing clean, efficient code and continuously learning emerging technologies to deliver high-quality solutions.</p>
-                    
-                    <p>With hands-on experience in Java, Spring Boot, React, GCP, and Apigee, I've successfully built and deployed multiple projects that demonstrate my ability to create scalable, production-ready applications.</p>
+            <div class="stats">
+                <div class="stat-card fade-in">
+                    <div class="stat-number">1.2+</div>
+                    <div class="stat-label">Years Experience</div>
                 </div>
-                
-                <div class="stats">
-                    <div class="stat-card fade-in">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">APIs Deployed</div>
-                    </div>
-                    <div class="stat-card fade-in">
-                        <div class="stat-number">40%</div>
-                        <div class="stat-label">Performance Boost</div>
-                    </div>
-                    <div class="stat-card fade-in">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Certifications</div>
-                    </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">APIs Deployed</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Performance Boost</div>
+                </div>
+                <div class="stat-card fade-in">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Certifications</div>
                 </div>
             </div>
         </div>
@@ -728,8 +709,8 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="section-subtitle">Technologies and tools I work with</p>
+            <h2 class="section-title">Technical Arsenal</h2>
+            <p class="section-subtitle">Core competencies that drive results</p>
             
             <div class="skills-grid">
                 <div class="skill-category fade-in">
@@ -765,9 +746,9 @@
                     <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
                     <ul>
                         <li>Google Cloud Platform</li>
-                        <li>Apigee API Management</li>
+                        <li>Apigee Management</li>
                         <li>Docker</li>
-                        <li>CI/CD Basics</li>
+                        <li>CI/CD</li>
                     </ul>
                 </div>
                 
@@ -775,17 +756,17 @@
                     <h3><i class="fas fa-database"></i> Databases</h3>
                     <ul>
                         <li>MySQL</li>
-                        <li>SQL Query Optimization</li>
+                        <li>SQL Optimization</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category fade-in">
-                    <h3><i class="fas fa-tools"></i> Tools & Concepts</h3>
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
                     <ul>
                         <li>Git/GitHub</li>
                         <li>Postman</li>
-                        <li>Data Structures & Algorithms</li>
-                        <li>Agile Methodology</li>
+                        <li>DSA</li>
+                        <li>Agile</li>
                     </ul>
                 </div>
             </div>
@@ -796,7 +777,7 @@
     <section id="experience">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
-            <p class="section-subtitle">My journey in the tech industry</p>
+            <p class="section-subtitle">Delivering measurable impact at scale</p>
             
             <div class="experience-card fade-in">
                 <div class="experience-header">
@@ -811,10 +792,10 @@
                 </div>
                 
                 <ul>
-                    <li>Completed comprehensive Java Full Stack and GCP-Apigee training, focusing on API development, authentication, authorization, and cloud infrastructure management</li>
-                    <li>Designed and deployed 10+ REST APIs on Apigee platform, implementing rate limiting and quota policies that improved system stability by 40% during peak traffic periods</li>
-                    <li>Gained hands-on exposure to IAM roles, VPC configuration, subnet design, and compute engine setup in Google Cloud Platform</li>
-                    <li>Trained in developing backend microservices using Spring Boot, with focus on performance optimization through efficient SQL queries and caching techniques</li>
+                    <li>Deployed 10+ REST APIs on Apigee with rate limiting & quota policies, improving system stability by 40%</li>
+                    <li>Trained in Java Full Stack, Spring Boot microservices, and GCP infrastructure (IAM, VPC, Compute Engine)</li>
+                    <li>Optimized backend performance through efficient SQL queries and caching strategies</li>
+                    <li>Collaborated in Agile teams for API authentication, authorization, and security implementations</li>
                 </ul>
             </div>
         </div>
@@ -824,14 +805,14 @@
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Real-world applications showcasing my skills</p>
+            <p class="section-subtitle">Production-ready applications showcasing technical expertise</p>
             
             <div class="projects-grid">
                 <div class="project-card fade-in">
                     <div class="project-header">
-                        <h3>Learnify - Learning Management Platform</h3>
+                        <h3>Learnify - LMS Platform</h3>
                         <div class="project-tech">
-                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">React</span>
                             <span class="tech-tag">Spring Boot</span>
                             <span class="tech-tag">MySQL</span>
                             <span class="tech-tag">Docker</span>
@@ -840,18 +821,17 @@
                     </div>
                     <div class="project-body">
                         <ul>
-                            <li>Developed full-stack LMS with domains, modules, lessons, practice questions, certificates, and progress tracking</li>
-                            <li>Built scalable Spring Boot REST APIs with JWT authentication and role-based access control</li>
-                            <li>Engineered modern React UI with animations, dashboards, and reusable component architecture</li>
-                            <li>Containerized services using Docker and integrated MySQL database</li>
-                            <li>Leveraged AI-assisted development reducing build time by 30% while achieving production-level quality</li>
+                            <li>Full-stack LMS with modules, certificates, progress tracking & dashboards</li>
+                            <li>JWT authentication with role-based access control</li>
+                            <li>Dockerized architecture with optimized MySQL schema</li>
+                            <li>30% faster development using AI-assisted coding</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="project-card fade-in">
                     <div class="project-header">
-                        <h3>Bank Account Management System</h3>
+                        <h3>Bank Management System</h3>
                         <div class="project-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">Spring Boot</span>
@@ -861,30 +841,30 @@
                     </div>
                     <div class="project-body">
                         <ul>
-                            <li>Developed full-stack web application for Tech Mahindra capstone project with secure user registration and login</li>
-                            <li>Implemented features like profile photo upload, account information editing, and transaction history tracking</li>
-                            <li>Followed MVC architecture pattern with Spring Boot and Thymeleaf templates</li>
-                            <li>Applied REST APIs and handled data persistence with MySQL and JPA</li>
+                            <li>Capstone project with secure authentication system</li>
+                            <li>Profile management, photo upload, transaction history</li>
+                            <li>MVC architecture with REST APIs and JPA persistence</li>
+                            <li>Clean code following industry best practices</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="project-card fade-in">
                     <div class="project-header">
-                        <h3>Precision in Diabetes Diagnosis</h3>
+                        <h3>Diabetes Diagnosis ML Model</h3>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">ML</span>
                             <span class="tech-tag">XGBoost</span>
                             <span class="tech-tag">Random Forest</span>
                         </div>
                     </div>
                     <div class="project-body">
                         <ul>
-                            <li>Built ensemble ML model achieving 83% accuracy on dataset of 768 patients</li>
-                            <li>Implemented XGBoost and Random Forest algorithms for improved prediction accuracy</li>
-                            <li>Research findings published at IEEE OTCON 2024 international conference</li>
-                            <li>Conducted comprehensive data analysis and model evaluation</li>
+                            <li>Ensemble model achieving 83% accuracy on 768 patients</li>
+                            <li>Published at IEEE OTCON 2024 conference</li>
+                            <li>Comprehensive data analysis and model evaluation</li>
+                            <li>Production-ready ML pipeline implementation</li>
                         </ul>
                     </div>
                 </div>
@@ -896,13 +876,13 @@
     <section id="education">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <p class="section-subtitle">Academic background and achievements</p>
+            <p class="section-subtitle">Strong academic foundation</p>
             
-            <div class="education-timeline">
+            <div class="education-grid">
                 <div class="education-item fade-in">
                     <h3>Vardhaman College of Engineering</h3>
-                    <p class="degree">Bachelor of Technology (B.Tech) in Information Technology</p>
-                    <p class="year">2020 - 2024 | Hyderabad, Telangana</p>
+                    <p class="degree">B.Tech in Information Technology</p>
+                    <p class="year">2020 - 2024 | Hyderabad</p>
                     <p class="score">CGPA: 8.75/10</p>
                 </div>
                 
@@ -910,12 +890,12 @@
                     <h3>Narayana Junior College</h3>
                     <p class="degree">Intermediate (Class 12)</p>
                     <p class="year">2018 - 2020 | Hyderabad</p>
-                    <p class="score">Percentage: 97%</p>
+                    <p class="score">97%</p>
                 </div>
                 
                 <div class="education-item fade-in">
                     <h3>Montessori High School</h3>
-                    <p class="degree">Secondary School Certificate (SSC)</p>
+                    <p class="degree">SSC (Class 10)</p>
                     <p class="year">2017 - 2018 | Bhupalpally</p>
                     <p class="score">CGPA: 9.8/10</p>
                 </div>
@@ -927,21 +907,21 @@
     <section id="certifications">
         <div class="container">
             <h2 class="section-title">Certifications</h2>
-            <p class="section-subtitle">Professional credentials and achievements</p>
+            <p class="section-subtitle">Industry-recognized credentials</p>
             
             <div class="certifications-grid">
                 <div class="cert-card fade-in">
                     <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                     <div class="cert-info">
-                        <h4>Apigee and API Management</h4>
-                        <p>Google Cloud - API Developer (2025)</p>
+                        <h4>Apigee & API Management</h4>
+                        <p>Google Cloud (2025)</p>
                     </div>
                 </div>
                 
                 <div class="cert-card fade-in">
                     <div class="cert-icon"><i class="fas fa-database"></i></div>
                     <div class="cert-info">
-                        <h4>SQL and Relational Databases 101</h4>
+                        <h4>SQL & Relational Databases</h4>
                         <p>IBM CognitiveClass (2024)</p>
                     </div>
                 </div>
@@ -950,7 +930,7 @@
                     <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
                     <div class="cert-info">
                         <h4>Exploratory Data Analysis</h4>
-                        <p>Accenture - Level 2, AI Ready (2024)</p>
+                        <p>Accenture - AI Ready (2024)</p>
                     </div>
                 </div>
                 
@@ -961,14 +941,6 @@
                         <p>Internshala (2022)</p>
                     </div>
                 </div>
-                
-                <div class="cert-card fade-in">
-                    <div class="cert-icon"><i class="fas fa-podium"></i></div>
-                    <div class="cert-info">
-                        <h4>IEEE OTCON 2024</h4>
-                        <p>Conference Presentation</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -976,8 +948,8 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">I'm always open to discussing new opportunities and collaborations</p>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Open to new opportunities and collaborations</p>
             
             <div class="contact-grid">
                 <div class="contact-item fade-in">
@@ -995,13 +967,13 @@
                 <div class="contact-item fade-in">
                     <i class="fab fa-linkedin"></i>
                     <h3>LinkedIn</h3>
-                    <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank">linkedin.com/in/sai-pranay-geetla</a>
+                    <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank">Connect with me</a>
                 </div>
                 
                 <div class="contact-item fade-in">
                     <i class="fab fa-github"></i>
                     <h3>GitHub</h3>
-                    <a href="https://github.com/saipranaygeetla" target="_blank">github.com/saipranaygeetla</a>
+                    <a href="https://github.com/saipranaygeetla" target="_blank">View repositories</a>
                 </div>
             </div>
         </div>
@@ -1009,65 +981,30 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Sai Pranay Geetla. All rights reserved. | Designed with passion for innovation</p>
-        </div>
+        <p>&copy; 2025 Sai Pranay Geetla | Software Engineer</p>
     </footer>
 
-    <!-- Scroll Animation Script -->
     <script>
-        // Smooth scrolling for navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
 
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
+        // Fade-in animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
+        }, { threshold: 0.1 });
 
-        document.querySelectorAll('.fade-in').forEach(element => {
-            observer.observe(element);
-        });
-
-        // Active navigation highlight
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('nav a').forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === `#${current}`) {
-                    a.classList.add('active');
-                }
-            });
-        });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
