@@ -4,118 +4,139 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sai Pranay Geetla — Associate Software Engineer</title>
-  <meta name="description" content="Sai Pranay Geetla — Java, Spring Boot, React.js, SQL, GCP. Full-stack & backend developer. Published at IEEE OTCON 2024. Download resume." />
+  <meta name="description" content="Sai Pranay Geetla — Associate Software Engineer. Java, Spring Boot, React, SQL, GCP. Published at IEEE OTCON 2024. Download resume." />
+  <meta name="theme-color" content="#071026" />
   <meta property="og:title" content="Sai Pranay Geetla — Associate Software Engineer" />
-  <meta property="og:description" content="Java • Spring Boot • React • GCP — I build reliable backends and maintainable full-stack systems. Published at IEEE OTCON 2024." />
+  <meta property="og:description" content="Java • Spring Boot • React • GCP — I build reliable backends and cloud-ready full-stack apps." />
   <meta property="og:image" content="/og-image.png" />
   <meta property="og:type" content="profile" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Sai Pranay Geetla",
+    "jobTitle":"Associate Software Engineer",
+    "url":"https://<your-site-url>",
+    "sameAs":["https://linkedin.com/in/sai-pranay-geetla","https://github.com/saipranaygeetla"]
+  }
+  </script>
+
   <style>
     :root{
-      --bg:#071026; --card:#0b1530; --muted:#9fb0c9; --accent:#5ee7b0; --glass:rgba(255,255,255,0.03);
-      --accent-2:#60a5fa; --text:#e6eef6;
+      --bg:#071026; --panel:#0b1530; --muted:#9fb0c9; --accent:#5ee7b0; --glass: rgba(255,255,255,0.03);
+      --accent2:#60a5fa; --text:#e6eef6; --maxw:1000px;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
-      background: radial-gradient(1200px 700px at 10% 10%, rgba(96,165,250,0.04), transparent 8%),
-                  linear-gradient(180deg,var(--bg) 0%, #041024 100%);
-      color:var(--text); -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale; padding:28px;
+      background:linear-gradient(180deg,var(--bg),#041024); color:var(--text);
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      padding:28px;
     }
-    .wrap{max-width:980px;margin:0 auto;}
-    header{display:flex;gap:18px;align-items:center}
+    .container{max-width:var(--maxw); margin:0 auto}
+    header{display:flex; gap:18px; align-items:center}
     .avatar{
-      width:92px;height:92px;border-radius:14px;
-      background:linear-gradient(135deg,var(--accent),var(--accent-2));
-      display:flex;align-items:center;justify-content:center;font-weight:800;color:#052025;font-size:34px;
+      width:96px;height:96px;border-radius:14px;flex:0 0 96px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      display:flex;align-items:center;justify-content:center;font-weight:800;color:#042827;font-size:34px;
       box-shadow:0 10px 30px rgba(2,6,23,0.6);
     }
     h1{margin:0;font-size:28px}
-    .role{color:var(--muted);margin-top:6px;font-size:15px}
-    .lead{color:var(--muted);margin-top:12px;line-height:1.5}
-    .grid{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:22px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006)); padding:20px;border-radius:14px;box-shadow:0 12px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+    .subtitle{color:var(--muted); margin-top:6px; font-size:15px}
+    .hero-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:10px}
+    .lead{color:var(--muted); margin-top:12px; line-height:1.5; max-width:70%}
+    .cta{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap}
+    .btn{padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none;border:0;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#042827}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06); color:var(--muted)}
+    .layout{display:grid; grid-template-columns:1fr 340px; gap:22px; margin-top:22px}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006)); padding:20px;border-radius:14px;
+           border:1px solid rgba(255,255,255,0.02); box-shadow:0 12px 30px rgba(2,6,23,0.6)}
     .section-title{font-weight:700;margin-bottom:8px}
-    .pill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);display:inline-block;margin:6px 6px 0 0}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
-    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#072028}
-    .btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent;}
-    .projects .project{margin-bottom:14px}
-    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
-    a{color:inherit}
-    ul{margin:0;padding-left:18px}
-    @media(max-width:900px){.grid{grid-template-columns:1fr}.avatar{width:72px;height:72px}}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass); padding:6px 10px; border-radius:999px; font-size:13px; color:var(--muted)}
+    .project{margin-bottom:16px}
+    .project h4{margin:0;font-size:15px}
+    .project .meta{color:var(--muted);font-size:13px;margin-top:4px}
+    .project p{color:var(--muted);margin:8px 0 0;line-height:1.45}
+    ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:920px){
+      .layout{grid-template-columns:1fr}
+      .lead{max-width:100%}
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="container" role="main">
     <header>
       <div class="avatar" aria-hidden="true">SP</div>
       <div>
         <h1>Sai Pranay Geetla</h1>
-        <div class="role">Associate Software Engineer — Java • Spring Boot • React • GCP</div>
-        <div class="lead">I build reliable backend systems and maintainable full-stack apps. My work focuses on clean architecture, secure APIs, and measurable outcomes — deployed on cloud environments.</div>
-        <div style="margin-top:10px;color:var(--muted);font-size:14px">
-          Hyderabad, India • <a href="tel:+919014264208" style="color:var(--accent)">+91 9014264208</a> • <a href="mailto:saipranaygeetla@outlook.com" style="color:var(--accent)">saipranaygeetla@outlook.com</a>
-          <div style="margin-top:6px">
-            <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer" style="color:var(--muted)">LinkedIn</a> •
-            <a href="https://github.com/saipranaygeetla" target="_blank" rel="noreferrer" style="color:var(--muted)">GitHub</a>
-          </div>
+        <div class="subtitle">Associate Software Engineer — Java • Spring Boot • React • GCP</div>
+        <div class="hero-row">
+          <div class="lead">I design and ship reliable backend systems and cloud-ready full-stack solutions. I focus on measurable outcomes — secure APIs, maintainable code, and efficient deployments.</div>
+        </div>
+
+        <div class="cta" aria-label="Call to action">
+          <a class="btn btn-primary" href="/resume.pdf" download>Download Resume</a>
+          <a class="btn btn-outline" href="mailto:saipranaygeetla@outlook.com">Contact</a>
+          <a class="btn btn-outline" href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-outline" href="https://github.com/saipranaygeetla" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </header>
 
-    <div class="grid">
-      <!-- left -->
-      <main class="card">
-        <section>
-          <div class="section-title">Featured Projects</div>
-          <div class="projects">
-            <div class="project">
-              <div style="font-weight:700">Learnify — Full-Stack Learning Management System</div>
-              <div style="color:var(--muted);font-size:13px">React • Spring Boot • MySQL • Docker • JWT</div>
-              <div style="margin-top:6px;color:var(--muted)">Built course modules, role-based access, dashboards and a secure JWT authentication flow. Containerized services and introduced AI-assisted workflows which improved developer build/test speed by ~30%.</div>
-              <div style="margin-top:6px"><a href="#" style="color:var(--accent)">View code</a> · <a href="#" style="color:var(--accent)">Live demo</a></div>
-            </div>
+    <div class="layout" aria-label="Main layout">
+      <!-- Main content -->
+      <main class="panel" aria-label="Main content">
+        <section aria-labelledby="projects-title">
+          <div class="section-title" id="projects-title">Featured Projects</div>
 
-            <div class="project">
-              <div style="font-weight:700">Bank Account Management System</div>
-              <div style="color:var(--muted);font-size:13px">Java • Spring Boot • MySQL</div>
-              <div style="margin-top:6px;color:var(--muted)">Capstone project used in Tech Mahindra training: secure registration, profile photo upload, account editing, and transaction history. Followed MVC and JPA repository patterns; designed clean REST endpoints for integration.</div>
-              <div style="margin-top:6px"><a href="#" style="color:var(--accent)">View code</a></div>
-            </div>
+          <article class="project" aria-labelledby="learnify-title">
+            <h4 id="learnify-title">Learnify — Full-Stack Learning Platform</h4>
+            <div class="meta">React • Spring Boot • MySQL • Docker • JWT</div>
+            <p>Built modular course delivery, dashboards, role-based access and secure JWT authentication. Containerized services and introduced AI-assisted build workflows that reduced development cycle time by ~30%.</p>
+            <div style="margin-top:8px"><a href="#" style="color:var(--accent)">View repo</a> · <a href="#" style="color:var(--accent)">Live demo</a></div>
+          </article>
 
-            <div class="project">
-              <div style="font-weight:700">Precision in Diabetes Diagnosis</div>
-              <div style="color:var(--muted);font-size:13px">Python • XGBoost • Random Forest</div>
-              <div style="margin-top:6px;color:var(--muted)">Ensemble ML solution achieving ~83% accuracy on a medical dataset. Research published at IEEE OTCON 2024 — demonstrates strong data analysis and model selection skills.</div>
-              <div style="margin-top:6px"><a href="#" style="color:var(--accent)">Read paper</a></div>
-            </div>
-          </div>
+          <article class="project" aria-labelledby="bank-title">
+            <h4 id="bank-title">Bank Account Management System</h4>
+            <div class="meta">Java • Spring Boot • MySQL</div>
+            <p>Capstone used in Tech Mahindra training: secure registration, profile photo upload, account management, and transaction history with clean REST endpoints and JPA repositories.</p>
+            <div style="margin-top:8px"><a href="#" style="color:var(--accent)">View repo</a></div>
+          </article>
+
+          <article class="project" aria-labelledby="ml-title">
+            <h4 id="ml-title">Precision in Diabetes Diagnosis — IEEE Publication</h4>
+            <div class="meta">Python • XGBoost • Random Forest</div>
+            <p>Developed an ensemble model achieving ~83% accuracy on a clinical dataset. Published at IEEE OTCON 2024 — demonstrates applied ML, data preprocessing, and model evaluation skills.</p>
+            <div style="margin-top:8px"><a href="#" style="color:var(--accent)">Read paper</a></div>
+          </article>
         </section>
 
-        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+        <hr style="margin:18px 0; border:none; border-top:1px solid rgba(255,255,255,0.03)">
 
-        <section>
-          <div class="section-title">Experience</div>
+        <section aria-labelledby="experience-title">
+          <div class="section-title" id="experience-title">Experience</div>
           <div style="font-weight:700">Tech Mahindra — Associate Software Engineer</div>
-          <div style="color:var(--muted);font-size:13px">Sept 2024 — Present</div>
-          <ul style="margin-top:8px;color:var(--muted);line-height:1.6">
-            <li>Designed & deployed <strong>10+ REST APIs</strong> on Apigee; applied rate limits and quota policies that improved system stability by <strong>~40%</strong>.</li>
-            <li>Configured IAM roles, VPCs and compute instances; worked with secure API gateways and role-based access.</li>
-            <li>Contributed to backend development and cloud deployments; practiced performance tuning and monitoring.</li>
+          <div class="meta">Sept 2024 — Present</div>
+          <ul>
+            <li>Designed & deployed <strong>10+ REST APIs</strong> on Apigee and applied rate-limiting and quota policies — improving system stability by <strong>~40%</strong>.</li>
+            <li>Configured IAM roles, VPCs and compute resources; supported secure API gateway integrations and role-based access controls.</li>
+            <li>Worked on backend services, microservice basics, and performance tuning.</li>
           </ul>
         </section>
 
-        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+        <hr style="margin:18px 0; border:none; border-top:1px solid rgba(255,255,255,0.03)">
 
-        <section>
-          <div class="section-title">Education & Certifications</div>
-          <div style="color:var(--muted)">B.Tech in Information Technology — Vardhaman College of Engineering • CGPA 8.75</div>
-          <ul style="margin-top:8px;color:var(--muted);line-height:1.6">
+        <section aria-labelledby="education-title">
+          <div class="section-title" id="education-title">Education & Certifications</div>
+          <div class="meta">B.Tech in Information Technology — Vardhaman College of Engineering • CGPA 8.75</div>
+          <ul>
             <li>Apigee & API Management — Google Cloud (2025)</li>
             <li>SQL & Relational Databases — IBM CognitiveClass (2024)</li>
             <li>Exploratory Data Analysis (Level 2) — Accenture (2024)</li>
@@ -123,36 +144,39 @@
         </section>
       </main>
 
-      <!-- right -->
-      <aside class="card">
+      <!-- Side panel -->
+      <aside class="panel" aria-label="Sidebar">
         <div>
-          <div class="section-title">Skills</div>
-          <div style="margin-top:8px">
-            <span class="pill">Java</span><span class="pill">Spring Boot</span><span class="pill">REST API</span><span class="pill">React</span><span class="pill">MySQL</span><span class="pill">GCP</span><span class="pill">Docker</span><span class="pill">Apigee</span>
+          <div class="section-title">Top Skills</div>
+          <div class="skills" role="list">
+            <span class="chip" role="listitem">Java</span>
+            <span class="chip" role="listitem">Spring Boot</span>
+            <span class="chip" role="listitem">REST APIs</span>
+            <span class="chip" role="listitem">React</span>
+            <span class="chip" role="listitem">MySQL</span>
+            <span class="chip" role="listitem">GCP</span>
+            <span class="chip" role="listitem">Docker</span>
+            <span class="chip" role="listitem">Apigee</span>
           </div>
         </div>
 
         <div style="margin-top:14px">
-          <div class="section-title">Resume & Contact</div>
-          <div style="color:var(--muted);font-size:14px;margin-bottom:8px">Download my resume or reach out directly.</div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap">
-            <a class="btn btn-primary" href="/resume.pdf" download>Download Resume</a>
-            <a class="btn btn-ghost" href="mailto:saipranaygeetla@outlook.com">Email</a>
-          </div>
-          <div style="margin-top:10px;color:var(--muted);font-size:13px">
-            <strong>Location:</strong> Hyderabad, India<br>
-            <strong>Open to:</strong> Backend / Full-stack & Cloud roles
+          <div class="section-title">Contact</div>
+          <div style="color:var(--muted);font-size:14px">
+            <strong>Email:</strong> <a href="mailto:saipranaygeetla@outlook.com" style="color:var(--accent)">saipranaygeetla@outlook.com</a><br>
+            <strong>Phone:</strong> <a href="tel:+919014264208" style="color:var(--accent)">+91 9014264208</a><br>
+            <strong>Location:</strong> Hyderabad, India
           </div>
         </div>
 
         <div style="margin-top:14px">
           <div class="section-title">Availability</div>
-          <div style="color:var(--muted);font-size:13px">Available for interviews. Open to remote, hybrid, or onsite roles.</div>
+          <div style="color:var(--muted);font-size:14px">Open to Backend, Full-stack, and Cloud engineering roles. Available for interviews — remote/hybrid/on-site.</div>
         </div>
 
         <div style="margin-top:14px">
-          <div class="section-title">Quick links</div>
-          <div style="margin-top:6px;color:var(--muted);font-size:13px">
+          <div class="section-title">Quick Links</div>
+          <div style="margin-top:6px;color:var(--muted);font-size:14px">
             <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer" style="color:var(--accent)">LinkedIn</a><br>
             <a href="https://github.com/saipranaygeetla" target="_blank" rel="noreferrer" style="color:var(--accent)">GitHub</a>
           </div>
@@ -161,7 +185,7 @@
     </div>
 
     <footer>
-      <div>Built by <strong>Sai Pranay</strong> • Published at IEEE OTCON 2024 • Contact: saipranaygeetla@outlook.com</div>
+      <div>© <strong>Sai Pranay</strong> — Built for hiring managers & technical leaders • Published at IEEE OTCON 2024</div>
     </footer>
   </div>
 </body>
