@@ -4,66 +4,77 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sai Pranay Geetla — Associate Software Engineer</title>
-  <meta name="description" content="Sai Pranay Geetla — Associate Software Engineer. Java, Spring Boot, React, SQL, GCP. Published at IEEE OTCON 2024. Download resume." />
-  <meta name="theme-color" content="#071026" />
+  <meta name="description" content="Associate Software Engineer — Java, Spring Boot, React, SQL, GCP. Built APIs on Apigee, published ML research (IEEE). Download resume." />
   <meta property="og:title" content="Sai Pranay Geetla — Associate Software Engineer" />
-  <meta property="og:description" content="Java • Spring Boot • React • GCP — I build reliable backends and cloud-ready full-stack apps." />
+  <meta property="og:description" content="Java • Spring Boot • React • GCP — I build reliable backend systems and cloud-ready full-stack solutions." />
   <meta property="og:image" content="/og-image.png" />
-  <meta property="og:type" content="profile" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Sai Pranay Geetla",
-    "jobTitle":"Associate Software Engineer",
-    "url":"https://<your-site-url>",
-    "sameAs":["https://linkedin.com/in/sai-pranay-geetla","https://github.com/saipranaygeetla"]
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sai Pranay Geetla",
+    "jobTitle": "Associate Software Engineer",
+    "url": "https://<your-github-username>.github.io/<your-repo>/",
+    "sameAs": [
+      "https://linkedin.com/in/sai-pranay-geetla",
+      "https://github.com/saipranaygeetla"
+    ]
   }
   </script>
 
   <style>
+    /* ---------- Variables ---------- */
     :root{
-      --bg:#071026; --panel:#0b1530; --muted:#9fb0c9; --accent:#5ee7b0; --glass: rgba(255,255,255,0.03);
-      --accent2:#60a5fa; --text:#e6eef6; --maxw:1000px;
+      --bg:#071026;
+      --card:#0b1530;
+      --muted:#9fb0c9;
+      --accent:#5ee7b0;
+      --accent2:#60a5fa;
+      --glass:rgba(255,255,255,0.03);
+      --text:#e6eef6;
+      --max:1100px;
     }
-    *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
-      background:linear-gradient(180deg,var(--bg),#041024); color:var(--text);
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      padding:28px;
+      margin:0; padding:28px; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+      background:
+        radial-gradient(800px 500px at 10% 10%, rgba(96,165,250,0.035), transparent 8%),
+        linear-gradient(180deg,var(--bg),#041024 100%);
+      color:var(--text); -webkit-font-smoothing:antialiased;
     }
-    .container{max-width:var(--maxw); margin:0 auto}
-    header{display:flex; gap:18px; align-items:center}
-    .avatar{
-      width:96px;height:96px;border-radius:14px;flex:0 0 96px;
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-      display:flex;align-items:center;justify-content:center;font-weight:800;color:#042827;font-size:34px;
-      box-shadow:0 10px 30px rgba(2,6,23,0.6);
-    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto}
+    /* header */
+    header{display:flex; gap:20px; align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#042827;font-size:34px;flex:0 0 96px;box-shadow:0 14px 40px rgba(2,6,23,0.6)}
     h1{margin:0;font-size:28px}
-    .subtitle{color:var(--muted); margin-top:6px; font-size:15px}
-    .hero-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:10px}
-    .lead{color:var(--muted); margin-top:12px; line-height:1.5; max-width:70%}
-    .cta{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap}
-    .btn{padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none;border:0;cursor:pointer}
-    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#042827}
-    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06); color:var(--muted)}
-    .layout{display:grid; grid-template-columns:1fr 340px; gap:22px; margin-top:22px}
-    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006)); padding:20px;border-radius:14px;
-           border:1px solid rgba(255,255,255,0.02); box-shadow:0 12px 30px rgba(2,6,23,0.6)}
-    .section-title{font-weight:700;margin-bottom:8px}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:15px}
+    .lead{color:var(--muted);margin-top:12px;line-height:1.5;max-width:70%}
+    .ctas{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+    .btn{padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none;display:inline-block}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#042827}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--muted)}
+    /* layout */
+    .layout{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:24px}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.012), rgba(255,255,255,0.006));padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.02);box-shadow:0 12px 30px rgba(2,6,23,0.6)}
+    .section-title{font-weight:700;margin-bottom:10px}
+    /* projects */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .card-project{background:rgba(255,255,255,0.01);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    .meta{color:var(--muted);font-size:13px;margin-top:6px}
+    .project-cta{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+    .metrics{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .metric{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);font-size:13px}
+    /* skills */
     .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:var(--glass); padding:6px 10px; border-radius:999px; font-size:13px; color:var(--muted)}
-    .project{margin-bottom:16px}
-    .project h4{margin:0;font-size:15px}
-    .project .meta{color:var(--muted);font-size:13px;margin-top:4px}
-    .project p{color:var(--muted);margin:8px 0 0;line-height:1.45}
-    ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    /* experience list */
+    .list{margin:8px 0;padding-left:18px;color:var(--muted);line-height:1.6}
     footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    /* responsive */
     @media(max-width:920px){
       .layout{grid-template-columns:1fr}
       .lead{max-width:100%}
@@ -71,72 +82,84 @@
   </style>
 </head>
 <body>
-  <div class="container" role="main">
+  <div class="wrap" role="main">
     <header>
       <div class="avatar" aria-hidden="true">SP</div>
       <div>
         <h1>Sai Pranay Geetla</h1>
         <div class="subtitle">Associate Software Engineer — Java • Spring Boot • React • GCP</div>
-        <div class="hero-row">
-          <div class="lead">I design and ship reliable backend systems and cloud-ready full-stack solutions. I focus on measurable outcomes — secure APIs, maintainable code, and efficient deployments.</div>
+        <p class="lead">I design and ship reliable backend systems and cloud-ready full-stack solutions. I focus on measurable outcomes: secure APIs, maintainable code, and efficient cloud deployments.</p>
+
+        <div class="ctas" aria-label="primary actions">
+          <a class="btn btn-primary" href="/resume.pdf" download>Download Resume</a>
+          <a class="btn btn-ghost" href="mailto:saipranaygeetla@outlook.com">Contact</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
 
-        <div class="cta" aria-label="Call to action">
-          <a class="btn btn-primary" href="/resume.pdf" download>Download Resume</a>
-          <a class="btn btn-outline" href="mailto:saipranaygeetla@outlook.com">Contact</a>
-          <a class="btn btn-outline" href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn btn-outline" href="https://github.com/saipranaygeetla" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="metrics" aria-hidden="true">
+          <div class="metric"><strong>10+</strong> Production APIs (Apigee)</div>
+          <div class="metric"><strong>~40%</strong> Stability improvement via policies</div>
+          <div class="metric"><strong>IEEE</strong> Publication — OTCON 2024</div>
         </div>
       </div>
     </header>
 
-    <div class="layout" aria-label="Main layout">
-      <!-- Main content -->
-      <main class="panel" aria-label="Main content">
+    <div class="layout" aria-label="main content">
+      <!-- main column -->
+      <main class="panel" aria-label="primary content">
         <section aria-labelledby="projects-title">
-          <div class="section-title" id="projects-title">Featured Projects</div>
+          <h2 class="section-title" id="projects-title">Featured Projects</h2>
 
-          <article class="project" aria-labelledby="learnify-title">
-            <h4 id="learnify-title">Learnify — Full-Stack Learning Platform</h4>
-            <div class="meta">React • Spring Boot • MySQL • Docker • JWT</div>
-            <p>Built modular course delivery, dashboards, role-based access and secure JWT authentication. Containerized services and introduced AI-assisted build workflows that reduced development cycle time by ~30%.</p>
-            <div style="margin-top:8px"><a href="#" style="color:var(--accent)">View repo</a> · <a href="#" style="color:var(--accent)">Live demo</a></div>
-          </article>
+          <div class="projects">
+            <div class="card-project" role="article">
+              <div style="font-weight:700">Learnify — Full-Stack LMS</div>
+              <div class="meta">React • Spring Boot • MySQL • Docker • JWT</div>
+              <p style="margin-top:8px;color:var(--muted)">Built modular course delivery, role-based access, dashboards, and a secure JWT auth flow. Containerized services and improved dev cycle by ~30% using automation and CI practices.</p>
+              <div class="project-cta">
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">View code</a>
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">Live demo</a>
+              </div>
+            </div>
 
-          <article class="project" aria-labelledby="bank-title">
-            <h4 id="bank-title">Bank Account Management System</h4>
-            <div class="meta">Java • Spring Boot • MySQL</div>
-            <p>Capstone used in Tech Mahindra training: secure registration, profile photo upload, account management, and transaction history with clean REST endpoints and JPA repositories.</p>
-            <div style="margin-top:8px"><a href="#" style="color:var(--accent)">View repo</a></div>
-          </article>
+            <div class="card-project" role="article">
+              <div style="font-weight:700">Bank Account Management System</div>
+              <div class="meta">Java • Spring Boot • MySQL</div>
+              <p style="margin-top:8px;color:var(--muted)">Capstone project: secure registration, profile upload, transactions history and account management using MVC, JPA repositories and clean REST APIs.</p>
+              <div class="project-cta">
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">View code</a>
+              </div>
+            </div>
 
-          <article class="project" aria-labelledby="ml-title">
-            <h4 id="ml-title">Precision in Diabetes Diagnosis — IEEE Publication</h4>
-            <div class="meta">Python • XGBoost • Random Forest</div>
-            <p>Developed an ensemble model achieving ~83% accuracy on a clinical dataset. Published at IEEE OTCON 2024 — demonstrates applied ML, data preprocessing, and model evaluation skills.</p>
-            <div style="margin-top:8px"><a href="#" style="color:var(--accent)">Read paper</a></div>
-          </article>
+            <div class="card-project" role="article">
+              <div style="font-weight:700">Precision in Diabetes Diagnosis</div>
+              <div class="meta">Python • XGBoost • Random Forest</div>
+              <p style="margin-top:8px;color:var(--muted)">Ensemble ML model achieving ~83% accuracy on a clinical dataset. Published at IEEE OTCON 2024. Focused on preprocessing, feature engineering, and model evaluation.</p>
+              <div class="project-cta">
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer">View paper</a>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <hr style="margin:18px 0; border:none; border-top:1px solid rgba(255,255,255,0.03)">
+        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
 
         <section aria-labelledby="experience-title">
-          <div class="section-title" id="experience-title">Experience</div>
+          <h2 class="section-title" id="experience-title">Experience</h2>
           <div style="font-weight:700">Tech Mahindra — Associate Software Engineer</div>
-          <div class="meta">Sept 2024 — Present</div>
-          <ul>
-            <li>Designed & deployed <strong>10+ REST APIs</strong> on Apigee and applied rate-limiting and quota policies — improving system stability by <strong>~40%</strong>.</li>
-            <li>Configured IAM roles, VPCs and compute resources; supported secure API gateway integrations and role-based access controls.</li>
-            <li>Worked on backend services, microservice basics, and performance tuning.</li>
+          <div class="meta" style="margin-bottom:8px">Sept 2024 — Present</div>
+          <ul class="list">
+            <li>Designed and deployed <strong>10+ REST APIs</strong> on Apigee and applied policies (rate limiting, quotas) to secure endpoints and ensure stability.</li>
+            <li>Configured IAM roles, VPCs, and compute instances; supported secure API gateway integrations and role-based access models.</li>
+            <li>Participated in backend development, microservice design basics, and performance tuning for production systems.</li>
           </ul>
         </section>
 
-        <hr style="margin:18px 0; border:none; border-top:1px solid rgba(255,255,255,0.03)">
+        <hr style="margin:18px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
 
         <section aria-labelledby="education-title">
-          <div class="section-title" id="education-title">Education & Certifications</div>
-          <div class="meta">B.Tech in Information Technology — Vardhaman College of Engineering • CGPA 8.75</div>
-          <ul>
+          <h2 class="section-title" id="education-title">Education & Certifications</h2>
+          <div class="meta" style="margin-bottom:8px">B.Tech in Information Technology — Vardhaman College of Engineering • CGPA 8.75</div>
+          <ul class="list">
             <li>Apigee & API Management — Google Cloud (2025)</li>
             <li>SQL & Relational Databases — IBM CognitiveClass (2024)</li>
             <li>Exploratory Data Analysis (Level 2) — Accenture (2024)</li>
@@ -144,10 +167,10 @@
         </section>
       </main>
 
-      <!-- Side panel -->
-      <aside class="panel" aria-label="Sidebar">
+      <!-- right column -->
+      <aside class="panel" aria-label="sidebar">
         <div>
-          <div class="section-title">Top Skills</div>
+          <h3 class="section-title">Top Skills</h3>
           <div class="skills" role="list">
             <span class="chip" role="listitem">Java</span>
             <span class="chip" role="listitem">Spring Boot</span>
@@ -161,22 +184,21 @@
         </div>
 
         <div style="margin-top:14px">
-          <div class="section-title">Contact</div>
-          <div style="color:var(--muted);font-size:14px">
+          <h3 class="section-title">Contact</h3>
+          <div class="meta" style="margin-bottom:10px">
             <strong>Email:</strong> <a href="mailto:saipranaygeetla@outlook.com" style="color:var(--accent)">saipranaygeetla@outlook.com</a><br>
             <strong>Phone:</strong> <a href="tel:+919014264208" style="color:var(--accent)">+91 9014264208</a><br>
             <strong>Location:</strong> Hyderabad, India
           </div>
+          <div>
+            <a class="btn btn-primary" href="/resume.pdf" download>Download Resume</a>
+            <a class="btn btn-ghost" href="mailto:saipranaygeetla@outlook.com">Email</a>
+          </div>
         </div>
 
         <div style="margin-top:14px">
-          <div class="section-title">Availability</div>
-          <div style="color:var(--muted);font-size:14px">Open to Backend, Full-stack, and Cloud engineering roles. Available for interviews — remote/hybrid/on-site.</div>
-        </div>
-
-        <div style="margin-top:14px">
-          <div class="section-title">Quick Links</div>
-          <div style="margin-top:6px;color:var(--muted);font-size:14px">
+          <h3 class="section-title">Quick Links</h3>
+          <div style="color:var(--muted)">
             <a href="https://linkedin.com/in/sai-pranay-geetla" target="_blank" rel="noreferrer" style="color:var(--accent)">LinkedIn</a><br>
             <a href="https://github.com/saipranaygeetla" target="_blank" rel="noreferrer" style="color:var(--accent)">GitHub</a>
           </div>
@@ -185,8 +207,20 @@
     </div>
 
     <footer>
-      <div>© <strong>Sai Pranay</strong> — Built for hiring managers & technical leaders • Published at IEEE OTCON 2024</div>
+      <div>© <strong>Sai Pranay</strong> — Built for hiring teams & technical leaders • Published at IEEE OTCON 2024</div>
     </footer>
   </div>
+
+  <!-- Small script: clickable mailto analytics-free (no external trackers) -->
+  <script>
+    // replace project links automatically if you add data-link attributes later
+    // (keeps file flexible)
+    document.addEventListener('click', function(e){
+      if(e.target.matches('[data-open]')){
+        const url = e.target.getAttribute('data-open');
+        if(url) window.open(url, '_blank', 'noopener');
+      }
+    });
+  </script>
 </body>
 </html>
